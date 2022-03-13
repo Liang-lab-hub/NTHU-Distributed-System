@@ -92,7 +92,8 @@ var _ = Describe("Service", func() {
 			})
 		})
 	})
-
+	
+	
 	Describe("CreateComment", func() {
 		var (
 			req     *pb.CreateCommentRequest
@@ -165,6 +166,7 @@ var _ = Describe("Service", func() {
 		})
 	})
 
+	
 	Describe("UpdateComment", func() {
 		var (
 			req     *pb.UpdateCommentRequest
@@ -176,7 +178,7 @@ var _ = Describe("Service", func() {
 		BeforeEach(func() {
 			req = &pb.UpdateCommentRequest{
 				Id:      uuid.NewString(),
-				Content: "fake content",
+				Content: "fake content", // content ? contents?
 			}
 			comment = &dao.Comment{
 				ID:      uuid.MustParse(req.GetId()),
