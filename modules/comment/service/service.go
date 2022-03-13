@@ -11,7 +11,6 @@ import (
 
 type service struct {
 	pb.UnimplementedCommentServer
-
 	commentDAO  dao.CommentDAO
 	videoClient videopb.VideoClient
 }
