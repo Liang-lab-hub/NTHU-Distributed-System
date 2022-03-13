@@ -61,9 +61,9 @@ gRPC TODO:
 */
 func (s *service) CreateComment(ctx context.Context, req *pb.CreateCommentRequest) (*pb.CreateCommentResponse, error) {
 	if _, err := s.videoClient.GetVideo(ctx, &videopb.GetVideoRequest{ 
-		Id: req.GetVideoId(), 
+          Id: req.GetVideoId(), 
 	}); err != nil {
-		return nil, err
+          return nil, err
 	}
 
 	comment := &dao.Comment {
