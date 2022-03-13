@@ -49,7 +49,6 @@ func (s *service) ListComment(ctx context.Context, req *pb.ListCommentRequest) (
 	}
 
 	return &pb.ListCommentResponse{Comments: pbComments}, nil
-
 }
 
 /*
@@ -79,7 +78,6 @@ func (s *service) CreateComment(ctx context.Context, req *pb.CreateCommentReques
 	}
 
 	return &pb.CreateCommentResponse{Id: commentID.String()}, nil
-
 }
 
 /*
@@ -109,7 +107,6 @@ func (s *service) UpdateComment(ctx context.Context, req *pb.UpdateCommentReques
 	}
 
 	return &pb.UpdateCommentResponse{Comment: comment.ToProto()}, nil
-
 }
 
 /*
@@ -132,7 +129,6 @@ func (s *service) DeleteComment(ctx context.Context, req *pb.DeleteCommentReques
 	}
 
 	return &pb.DeleteCommentResponse{}, nil
-
 }
 
 /*
