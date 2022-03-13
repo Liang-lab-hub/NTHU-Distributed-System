@@ -2,7 +2,6 @@ package service
 
 import (
 	"context"
-	"errors"
 	
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/comment/dao"
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/comment/pb"
@@ -98,7 +97,7 @@ func (s *service) UpdateComment(ctx context.Context, req *pb.UpdateCommentReques
 	}
 
 	if err := s.commentDAO.Update(ctx, comment); err != nil {
-		if errors.Is(err, dao.ErrCommentNotFound){
+		if err == dao.ErrCommentNotFound {
 			return nil, ErrCommentNotFound
 		}
 
@@ -120,7 +119,7 @@ func (s *service) DeleteComment(ctx context.Context, req *pb.DeleteCommentReques
 	}
 
 	if err := s.commentDAO.Delete(ctx, commentID); err != nil {
-		if errors.Is(err, dao.ErrCommentNotFound){
+		if err == dao.ErrCommentNotFound {
 			return nil, ErrCommentNotFound
 		}
 
