@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	
+	"errors"
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/comment/dao"
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/comment/pb"
 	videopb "github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/video/pb"
