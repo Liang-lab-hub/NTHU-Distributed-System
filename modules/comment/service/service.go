@@ -2,7 +2,8 @@ package service
 
 import (
 	"context"
-	//"errors"
+	"errors"
+	
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/comment/dao"
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/comment/pb"
 	videopb "github.com/NTHU-LSALAB/NTHU-Distributed-System/modules/video/pb"
@@ -97,11 +98,11 @@ func (s *service) UpdateComment(ctx context.Context, req *pb.UpdateCommentReques
 	}
 
 	if err := s.commentDAO.Update(ctx, comment); err != nil {
-		//if errors.Is(err, dao.ErrCommentNotFound){
+		if errors.Is(err, dao.ErrCommentNotFound){
 			return nil, ErrCommentNotFound
-		//}
+		}
 
-		//return nil, err
+		return nil, err
 	}
 
 	return &pb.UpdateCommentResponse{Comment: comment.ToProto()}, nil
