@@ -94,6 +94,7 @@ jobs:
     - name: set image name
       run: |
         echo "IMAGE_NAME=ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> ${{ github.env }}
+        
     - name: docker build and push
       uses: docker/build-push-action@v2
       with:
