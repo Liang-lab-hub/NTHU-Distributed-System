@@ -41,4 +41,5 @@ The CI/CD runs in [Github Actions](https://github.com/features/actions). See [wo
 ## Verfication
 
 ![result1] (https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r1.PNG)
-![result2] ()
+![result2] (https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r2.PNG)
+![result3] ()
