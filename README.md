@@ -40,6 +40,6 @@ The CI/CD runs in [Github Actions](https://github.com/features/actions). See [wo
 
 ## Verfication
 
-! [image](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r1.PNG)  
-! [image](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r2.PNG)  
-! [image](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r3.PNG)  
+![](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r1.PNG)  
+![](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r2.PNG)  
+![](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-gRPC/r3.PNG)  
