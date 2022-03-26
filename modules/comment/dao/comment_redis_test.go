@@ -19,7 +19,7 @@ var _ = Describe("CommentRedisDAO", func() {
 		pgCommentDAO = NewPGCommentDAO(pgClient)
 		redisCommentDAO = NewRedisCommentDAO(redisClient, pgCommentDAO)
 	})
-
+	
 	Describe("ListByVideoID", func() {
 		var (
 			comments []*Comment
@@ -39,7 +39,7 @@ var _ = Describe("CommentRedisDAO", func() {
 		JustBeforeEach(func() {
 			resp, err = redisCommentDAO.ListByVideoID(ctx, videoID, limit, offset)
 		})
-
+		
 		Context("cache hit", func() {
 			BeforeEach(func() {
 				limit, offset = 3, 0
@@ -60,7 +60,7 @@ var _ = Describe("CommentRedisDAO", func() {
 				})
 			})
 		})
-
+		
 		Context("cache miss", func() {
 			BeforeEach(func() {
 				limit, offset = 2, 0
