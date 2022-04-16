@@ -2,6 +2,7 @@ package kafkakit
 
 import (
 	"context"
+	//"fmt"
 
 	"github.com/NTHU-LSALAB/NTHU-Distributed-System/pkg/logkit"
 	"github.com/Shopify/sarama"
