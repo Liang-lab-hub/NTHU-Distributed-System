@@ -40,4 +40,4 @@ The CI/CD runs in [Github Actions](https://github.com/features/actions). See [wo
 
 
 ## Verification
-[](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-Kafka/verification.PNG)
+![verification](https://github.com/Liang-lab-hub/NTHU-Distributed-System/blob/Lab-Kafka/verification.PNG)
