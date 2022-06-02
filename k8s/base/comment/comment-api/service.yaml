@@ -1,7 +1,13 @@
-apiVersion: # TODO:
-kind: # TODO:
+apiVersion: v1 # TODO:
+kind: Service # TODO:
 metadata:
   name: comment-api
 spec:
-  type: # TODO:
+  type: ClusterIP # TODO:
   ports: # TODO:
+  - name: grpc
+    port: 8081
+    targetPort: 8081
+  - name: prometheus
+    port: 2222
+    targetPort: 2222
